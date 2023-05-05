@@ -32,3 +32,4 @@
 *.app
 
 python-env
+build

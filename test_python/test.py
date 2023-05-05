@@ -1,12 +1,12 @@
 import sys
 sys.path.append("../build/")
-sys.path.append("/home/xiping/mygithub/python_call_cpp/python-env/lib/python3.8/site-packages/")
+import mylib
+# VS code pylance add parsing config
+# File: .vscode/settings.json
+# Context:
+# {
+#     "python.analysis.extraPaths": ["./sources"]
+# }
 
-# import importlib
-# importlib.reload(mylib)
-
-from mylib import add
-
-
-
-print(add(1, 2))
+print("mylib.add(1, 2) =", mylib.add(1, 2))
+print("mylib.minus(10, 2) =", mylib.minus(10, 2))
